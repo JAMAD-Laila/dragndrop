@@ -1,0 +1,48 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.cloud,
+.table-container {
+  margin: 20px 0;
+}
+
+.cloud-items {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.draggable-item {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: grab;
+  user-select: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.draggable-item:active {
+  cursor: grabbing;
+}
+
+.droppable-table {
+  padding: 10px;
+  border: 2px dashed #2196f3;
+  border-radius: 5px;
+  min-height: 150px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
